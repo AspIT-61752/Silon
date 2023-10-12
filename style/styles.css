@@ -1,4 +1,30 @@
+:root {
+  --color-main-bg: #fff;
+  --color-temp: #000;
+}
+
+/* Main */
 * {
   margin: 0;
   padding: 0;
+  color: var(--color-temp);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/**  ID */
+#nav {
+}
+
+/** Classes */
+
+.flex-wrapper {
+  display: flex;
+}
+
+/** Tablets */
+@media screen and (min-width: 768px) {
+}
+
+/**  Everything else */
+@media screen and (min-width: 1001) {
 }
