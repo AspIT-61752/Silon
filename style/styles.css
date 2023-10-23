@@ -1,41 +1,116 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
-  --color-main-bg: #fff;
-  --color-temp: #000;
-  --color-link-hover: #d85353;
+	/* Names for h1 and h2 are from -> https://medium.com/@stefanmorris/proper-naming-of-color-variables-683264fec0f4 */
+	/* Color tips https://www.fixate.it/blog/make-your-css-variable-names-suck-less */
+	--color-main-bg: #fff;
+	--color-temp: #000;
+	--color-link-hover: #d85353;
+	--color-text-primary: #000;
+	--color-text-secondary: #888888;
+	--color-footer-bg: #e9e2d8;
 }
 
 /* Main */
 * {
-  margin: 0;
-  padding: 0;
-  color: var(--color-temp);
-  font-family: Arial, Helvetica, sans-serif;
-  /* text-decoration: none; */
+	margin: 0;
+	padding: 0;
+	color: var(--color-temp);
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	/* font-family: "Poppins", Arial, Helvetica, sans-serif; */
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-  transition: 0.4s ease;
-  color: var(--color-link-hover);
+	transition: 0.4s ease;
+	color: var(--color-link-hover);
+}
+
+img {
+	width: 100%;
 }
 
 /**  ID */
-#nav {
+#burger-container {
+	color: var(--color-text-primary);
+}
+
+#dropdown-container {
+	color: var(--color-text-primary);
 }
 
 /** Classes */
 
+.orange-color {
+	color: var(--color-link-hover);
+}
+
+.center-wrap {
+	margin: 0 10%;
+}
+
 .flex-wrapper {
-  display: flex;
+	display: flex;
+}
+
+.flex-wrap-col {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+}
+
+.flex-wrap-row {
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+}
+
+.flex-center {
+	justify-content: space-between;
+}
+
+.hidden {
+	display: none;
+	/* visibility: hidden; */
+}
+
+.logo {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 /** Tablets */
 @media screen and (min-width: 768px) {
+	.hidden {
+		display: flex;
+		/* visibility: visible; */
+	}
+
+	.center-wrap {
+		margin: 0 20%;
+	}
 }
 
 /**  Everything else */
-@media screen and (min-width: 1001) {
+@media screen and (min-width: 1001px) {
+	/* ? Do I need this if Tablets are using the exact same css */
+	/* .hidden {
+		display: flex;
+	}
+
+	.center-wrap {
+		margin: 0 20%;
+	} */
 }
