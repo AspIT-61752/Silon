@@ -25,6 +25,7 @@
   color: var(--color-temp);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   /* font-family: "Poppins", Arial, Helvetica, sans-serif; */
+  overflow-x: hidden;
 }
 
 header {
@@ -94,6 +95,40 @@ img {
   justify-content: space-between;
 }
 
+.flex-center-content {
+  margin: 0 auto;
+}
+
+.font-w-500 {
+  font-weight: 500;
+}
+
+.font-w-400 {
+  font-weight: 400;
+}
+
+.font-w-300 {
+  font-weight: 300;
+}
+
+.font-f-poppins {
+  font-family: "Poppins";
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.width-90p {
+  width: 90%;
+  padding: 0 5%;
+}
+
+.top-padding-wide-image-1 {
+  /* 2vh - 3vh is probably it. But I'll have to look into it later. */
+  padding-bottom: 2vh;
+}
+
 .hidden-on-mobile {
   display: none;
   /* visibility: hidden; */
@@ -110,6 +145,20 @@ img {
 
 .nav-icons i {
   font-size: x-large;
+}
+
+.background-image {
+  /* height: 70vh;
+  width: auto; */
+}
+
+.background-image-1 {
+  /* height: 70vh;
+  width: auto; */
+  background-image: url(../Gfx/bg-1.jpg);
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
 }
 
 /** Tablets */
